@@ -340,6 +340,7 @@ GNU_SYSTEM_MODULES =				\
   %D%/packages/mc.scm				\
   %D%/packages/mcrypt.scm			\
   %D%/packages/medical.scm			\
+  %D%/packages/mercury.scm        \
   %D%/packages/mes.scm				\
   %D%/packages/messaging.scm			\
   %D%/packages/mingw.scm			\
@@ -1158,7 +1159,8 @@ dist_patch_DATA =						\
   %D%/packages/patches/mcrypt-CVE-2012-4409.patch			\
   %D%/packages/patches/mcrypt-CVE-2012-4426.patch			\
   %D%/packages/patches/mcrypt-CVE-2012-4527.patch			\
-  %D%/packages/patches/mes-remove-store-name.patch		\
+  %D%/packages/patches/mercury-configure.patch    \
+  %D%/packages/patches/mercury-mgnuc.in.patch		\
   %D%/packages/patches/mesa-skip-disk-cache-test.patch		\
   %D%/packages/patches/mescc-tools-boot.patch			\
   %D%/packages/patches/meson-for-build-rpath.patch		\
