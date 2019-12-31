@@ -14,6 +14,7 @@
   (package
     (name "mercury")
     (version "rotd-2019-12-04")
+    (supported-systems '("aarch64-linux"))
     (source
       (origin
         (method url-fetch)
