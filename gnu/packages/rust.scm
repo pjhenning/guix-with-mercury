@@ -559,7 +559,7 @@ jemalloc = \"" jemalloc "/lib/libjemalloc_pic.a" "\"
              (add-after 'install 'delete-install-logs
                (lambda* (#:key outputs #:allow-other-keys)
                  (define (delete-manifest-file out-path file)
-                   (delete-file (string-append out-path "/lib/rustlib/" file)))
+                   (if (file-exists? (string-append out-path "/lib/rustlib/" file)) (delete-file (string-append out-path "/lib/rustlib/" file))))
 
                  (let ((out (assoc-ref outputs "out"))
                        (cargo-out (assoc-ref outputs "cargo")))
