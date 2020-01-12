@@ -13,7 +13,7 @@
 (define-public mercury
   (package
     (name "mercury")
-    (version "rotd-2019-12-04")
+    (version "rotd-2020-01-11")
     (supported-systems '("aarch64-linux"))
     (source
       (origin
