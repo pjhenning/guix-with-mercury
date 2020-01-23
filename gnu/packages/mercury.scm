@@ -38,7 +38,7 @@
       `(#:configure-flags
         '( ,@(let ((system (or (%current-target-system) (%current-system))))
                   (cond ((string-prefix? "aarch64" system)
-                          '("--enable-libgrades=none.gc,hlc.gc"))
+                          '("--enable-libgrades=none.gc,none.gc.debug,hlc.gc"))
                         (else '()))))
         #:parallel-build? #f
         #:make-flags
