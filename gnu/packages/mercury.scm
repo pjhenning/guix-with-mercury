@@ -13,16 +13,16 @@
 (define-public mercury
   (package
     (name "mercury")
-    (version "20.01-beta-2020-01-12")
+    (version "20.01")
     (supported-systems '("aarch64-linux"))
     (source
       (origin
         (method url-fetch)
         (uri (string-append
-               "http://dl.mercurylang.org/beta/mercury-srcdist-"
-               version ".tar.gz"))
+               "http://dl.mercurylang.org/release/mercury-srcdist-"
+               version ".tar.xz"))
         (sha256 (base32
-                  "0m90vc95gzpr1l1hnzawx8xcrzn08fh14dfm096hjs9wjbh726qn"))
+                  "1q8jrp9ip32wih29b4187m4cvj6fwh6qdvirsk9v631q4anc5kjr"))
         (patches (search-patches
                    "mercury-configure.patch"
                    "mercury-mgnuc.in.patch"))))
